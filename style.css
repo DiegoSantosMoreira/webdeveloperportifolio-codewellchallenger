@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #ddd;
 }
 
 .main-container{
@@ -20,7 +21,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    color: #fff;
     font-family: 'Prata', serif;
     font-weight: 100;
     padding: 30px 0;
@@ -54,75 +54,74 @@ body{
     cursor: pointer;
 }
 
-.u-footer{
-    background-color: #363636;
+#hamburguer-menu{
+    display: none;
 }
+
 
 /* MAIN SECTION CONTENT */
 
 .main-section{
-    margin-top: 25px;
-    padding: 0 125px;
     background-color: #000;
 }
 .u-title{
-    color: #fff;
+    padding-left: 120px;
+    width: 60%;
     text-align: left;
-    width: 75%;
     font-family: 'Inter', sans-serif;
     font-family: 'Prata', serif;
 }
 
 .u-title h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 
 .u-subtitle{
     font-family: 'Inter', sans-serif;
     font-family: 'Prata', serif;
-    color: #fff;
-    width: 50%;
+    width: 60%;
     text-align: justify;
-    margin: 10px 0; 
+}
+
+.u-subtitle p{
+    padding-left: 120px;
+    font-size: 1.5rem;
 }
 
 .u-logos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     margin-top: 4rem;
+    padding: 0 60px;
 }
 
 .card-1{
-    width: 500px;
-    height: 600px;
+    width: 600px;
+    height: 650px;
 }
 
 .card-2{
-    height: 400px;
-    width: 500px;
-    padding: 30px 0;
+    height: 450px;
+    width: 600px;
+    
 }
 .images{
-    width: 500px;
+    width: 600px;
 }
 
 .u-h1{
-    color: #ddd;
     font-family: 'Inter', sans-serif;
     font-family: 'Prata', serif;
     font-weight: lighter;
-    padding: 0 15px;
 }
 .u-paragraph{
-    color: #fff;
     font-family: 'Inter', sans-serif;
     font-family: 'Prata', serif;
     font-weight: 100;
     text-align: justify;
-    padding: 0 15px;
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 #span{
@@ -131,19 +130,18 @@ body{
 
 .u-pictures{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
     margin-top: 4rem;
+    padding: 0 95px;
 }
 
 .u-text{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
     background-color: #363636;
-    padding: 50px 0;
+    padding: 50px 95px 0 70px;
 }
 
 .u-h1-2{
@@ -162,16 +160,19 @@ body{
     font-family: 'Prata', serif;
     font-weight: 100;
     text-align: justify;
-    font-size: 16px;
-    padding: 10px 0px;
+    font-size: 1.3rem;
 }
 
 .additional-information{
     margin: 0;
     background-color: #000;
-    padding: 125px 125px;
+    padding: 100px;
 }
+
+/* FOOTER */
+
 .u-footer{
+    background-color: #363636;
     display: flex;
     justify-content: space-between;
     padding: 0 125px;
@@ -182,7 +183,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #fff;
     font-family: 'Prata', serif;
     font-weight: 100;
     padding: 30px 0;
@@ -195,4 +195,320 @@ body{
 .u-footer ul li{
     display: inline-block;
     padding: 10px 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 2560px) and (min-width: 2380px){
+    .u-header h3, ul, .u-button, .u-footer{
+        font-size: 2rem;
+    }
+    .u-button{
+        width: 250px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .u-title{
+        padding-left: 230px;
+    }
+    .u-title h1{
+        font-size: 6.5rem;
+    }
+    .u-subtitle p{
+        padding-left: 230px;
+        font-size: 2.2rem;
+    }
+    .u-logos{
+        padding: 0 140px;
+    }
+    .logos{
+        width: 225px;
+    }
+    .u-pictures{
+        padding: 0 190px;
+    }
+    .images{
+        width: 1000px;
+    }
+    .card-1{
+        width: 1000px;
+        height: 1000px;
+    }
+    .card-2{
+        width: 1000px;
+        height: 600px;
+    }
+    .u-h1{
+        font-size: 3.5rem;
+    }
+    .u-paragraph{
+        font-size: 2rem;
+    }
+    .u-text{
+        padding: 160px;
+    }
+    .u-h1-2{
+        font-size: 4rem;
+    }
+    .u-paragraph-2{
+        font-size: 2rem;
+    }
+    .additional-information{
+        padding-left: 245px;
+    }
+    .u-footer{
+        padding: 0 220px;
+    }
+    .social-networks{
+        width: 50px;
+    }
+}
+@media (max-width: 1024px){
+    .u-title{
+        padding: 0 45px;
+    }
+    .u-title h1{
+        font-size: 3rem;
+    }
+    .u-subtitle p{
+        padding: 0 45px;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .images,
+    .card-1,
+    .card-2{
+        width: 420px;
+    }
+    .card-2{
+        height: 650px;
+    }
+    .u-pictures{
+        padding: 0;
+    }
+    .u-text{
+        padding: 40px 0 0 0;
+    }
+    .additional-information{
+        padding: 40px;
+    }
+}
+@media (max-width: 768px){
+    .u-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 50px;
+    }
+    .button-none,
+    .u-header ul{
+        display: none;
+    }
+    #hamburguer-menu{
+        display: block;
+    }
+    .u-header h3{
+        font-size: 16px;
+    }
+    .u-title{
+        width: 95%;
+        padding: 0 50px;
+    }
+    .u-title h1{
+        font-size: 3.5rem;
+        padding-left: 0;
+        margin: 0;
+    }
+    .u-subtitle{
+        width: 85%;
+        padding: 0 50px;
+    }
+    .u-subtitle p{
+        padding-left: 0;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+    .u-logos{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        row-gap: 15px;
+        justify-content: center;
+        margin: 50px 0;
+        
+    }
+    .u-pictures{
+        width: 95%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .images{
+        width: 650px;
+    }
+    .card-2{
+        width: 650px;
+        height: 250px;
+    }
+    .additional-information{
+        padding: 70px;
+    }
+    .u-h1-2{
+        font-size: 2rem;
+    }
+    .u-text{
+        padding: 30px 0;
+    }
+    .media-paragraph,
+    .u-paragraph-2{
+        font-size: 16px;
+    }
+    .u-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 50px;
+    }
+}
+@media (max-width: 425px){
+    .u-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 20px;
+    }
+    .button-none,
+    .u-header ul{
+        display: none;
+    }
+    #hamburguer-menu{
+        display: block;
+    }
+    .u-header h3{
+        font-size: 14px;
+    }
+    .u-title{
+        width: 90%;
+        padding: 0 20px;
+    }
+    .u-title h1{
+        font-size: 2rem;
+        padding-left: 0;
+        margin: 0;
+    }
+    .u-subtitle{
+        width: 85%;
+        padding: 0 20px;
+    }
+    .u-subtitle p{
+        padding-left:0;
+        font-size: 0.9rem;
+        margin: 0;
+        padding-top: 25px;
+    }
+    .logos{
+        width: 100px;
+    }
+    .u-logos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .u-pictures{
+        width: 95%;
+        padding: 0 20px;
+        margin: 0;
+        display: flex;
+    }
+    .images{
+        width: 390px;
+    }
+    .card-1{
+        width: 390px;
+        height: 450px;
+    }
+    .card-2{
+        width: 390px;
+        height: 350px;
+    }
+    .u-paragraph,
+    .u-paragraph-2{
+        font-size: 18px;
+    }
+    .additional-information{
+        padding: 20px;
+    }
+    .u-h1-2{
+        font-size: 2rem;
+    }
+    .u-text{
+        padding: 30px 0;
+    }
+    .media-paragraph,
+    .u-paragraph-2{
+        font-size: 16px;
+    }
+    .u-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 20px;
+    }
+    .u-footer h3{
+        font-size: 14px;
+    }
+    .social-networks{
+        width: 20px;
+        padding: 0;
+    }
+    @media (max-width: 375px){
+        .logos{
+            width: 77px;
+        }
+        .images{
+            width: 330px;
+        }
+        .card-1{
+            width: 330px;
+            height: 450px;
+        }
+        .card-2{
+            width: 330px;
+            height: 350px;
+        }
+        .u-paragraph,
+        .u-paragraph-2{
+            font-size: 15px;
+        }  
+    @media (max-width: 320px){
+        .logos{
+            width: 50px;
+        }
+        .images{
+            width: 290px;
+        }
+        .u-pictures{
+            padding: 0;
+        }
+        .card-1{
+            width: 290px;
+            height: 390px;
+        }
+        .card-2{
+            width: 290px;
+            height: 350px;
+        }
+        .u-paragraph,
+        .u-paragraph-2{
+        font-size: 14px;
+        }
+        .u-footer{
+            padding: 10px;
+        }
+        .social-networks{
+            width: 15px;
+            padding: 0;
+        }
+    }
+}
 }
